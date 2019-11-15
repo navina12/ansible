@@ -5,7 +5,7 @@
   - name: webserver on ubuntu
     apt:
       name: apache2
-      state: present
+      state: present  
 
   - name: start the webserver on ubuntu
     service:
