@@ -8,11 +8,6 @@
      state: present
 
   - name: install webserver on redhat
-    yum: 
+    yum:
      name: httpd
      state: present
-
-
-  
-  
- 
