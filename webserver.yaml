@@ -2,14 +2,17 @@
 - hosts: all
   become: yes
   tasks:
-- name: install webserver on ubuntu
-  apt:
-    name: apache2
-    state: present
+  - name: install webserver on ubuntu
+    apt:
+     name: apache2
+     state: present
 
-- name: install webserver on redhat
-  yum:
-   name: httpd
-   state: present
+  - name: install webserver on redhat
+    yum: 
+     name: httpd
+     state: present
+
+
+  
   
  
