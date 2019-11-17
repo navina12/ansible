@@ -2,7 +2,7 @@
 - hosts: webservers 
   become: yes
   tasks:
-  - name: webserver on ubuntu
+  - name: install webserver on ubuntu16
     apt:
       name: "{{webserveronubuntu}}"
       state: present
@@ -13,7 +13,7 @@
       state: started
     when: ansible_os_family=="Debian"
 
-  - name: webserver on redhat
+  - name: install webserver on redhat
     yum:
       name: "{{webserveronredhat}}"
       state: present

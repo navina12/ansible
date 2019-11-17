@@ -2,6 +2,12 @@
   172.31.80.95
   172.31.92.24
 
+ [ubuntuservers]
+   172.31.80.95
+
+
+  [redhatservers]
+  172.31.92.24
 
 
 
@@ -16,6 +22,5 @@
 
 
 
-  [webserveronubuntu]== apache2
-  [webserveronredhat]== httpd
+  
   
