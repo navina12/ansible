@@ -16,6 +16,6 @@
 
 
 
-  webserver on ubuntu== apache2
-  webserver on redhat== httpd
+  webserver on ubuntu: apache2
+  webserver on redhat: httpd
   
