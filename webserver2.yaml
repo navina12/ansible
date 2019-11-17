@@ -4,23 +4,23 @@
   tasks:
   - name: webserver on ubuntu
     apt:
-      name: "webserver on ubuntu"
+      name: "{webserveronubuntu}"
       state: present
     when: ansible_os_family=="Debian"
   - name: start the webserver on ubuntu
     service:
-      name: "webserver on ubuntu"
+      name: "{webserveronubuntu}"
       state: started
     when: ansible_os_family=="Debian"
 
   - name: webserver on redhat
     yum:
-      name: "webserver on redhat"
+      name: "{webserveronredhat}"
       state: present
     when: ansible_os_family=="RedHat"
       
   - name: start webserver on redhat
     service:
-      name: "webserver on redhat"
+      name: "{webserveronredhat}"
       state: started
     when: ansible_os_family=="RedHat"
