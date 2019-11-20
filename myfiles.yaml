@@ -15,4 +15,9 @@
      state: started
     when: ansible_os_family=="Debian"
     
-  
+  - name: copy index file to node 
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+    when: ansible_os_family=="Debian"  
+ 
