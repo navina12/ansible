@@ -1,23 +1,23 @@
 ---
-- hosts: ubuntuservers
+- hosts: webservers
   become : yes
   tasks:
-  - name: install webserver on ubuntu
+  - name: install webserver on redhat
     apt:
-      name: apache2
+      name: httpd
       start: present
     notify: restart webserver
-    when: ansible_os_family=="Debian"
+    when: ansible_os_family=="RedHat"
     
   - name: copy indexfile to node
     template:
       src: myindex.j2
       des: /var/www/html/index.html
     notify: restart webserver
-    when: ansible_os_family=="Debian"
+    when: ansible_os_family=="RedHat"
     
   handlers:
     - name: restart webserver
       service:
-        name: apache2
+        name: httpd
         state: restarted
