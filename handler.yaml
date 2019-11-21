@@ -3,7 +3,7 @@
   become : yes
   tasks:
   - name: install webserver on redhat
-    apt:
+    yum:
       name: httpd
       start: present
     notify: restart webserver
