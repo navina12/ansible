@@ -6,6 +6,7 @@
     yum:
       name: tree
       statee: present
+      ignore_errors: yes
     when: ansible_os_family=="RedHat"  
   - name: install git
     yum:
