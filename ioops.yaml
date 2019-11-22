@@ -1,12 +1,12 @@
 ---
-- hosts: webservers
+- hosts: 172.31.80.95
   become: yes
   tasks:
   - name: install tree
     apt:
      name: "{{item}}"
      state: present
-     when : ansible_os_family=="Debian"
+     
     loop:
      - tree
      - wget
