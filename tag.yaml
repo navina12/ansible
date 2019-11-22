@@ -1,23 +1,23 @@
 ---
-- hosts: 172.31.80.95
+- hosts: redhatservers
   become: yes
   tasks:
 
-- name: install wget
-  apt:
-    name: wget
-    state: present
-  tags: wget
+  - name: install wget
+    yum:
+     name: wget
+     state: present
+    tags: wget
 
-- name: install git
-  apt: 
-    name: git
-    state: present
-  tags: git
+  - name: install git
+    yum: 
+     name: git
+     state: present
+    tags: git
   
-- name: install tree
-  apt:
-    name: tree
-    state: present
-  tags: tree  
+  - name: install tree
+    yum:
+     name: tree
+     state: present
+    tags: tree  
 
