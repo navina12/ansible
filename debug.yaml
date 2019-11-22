@@ -9,3 +9,19 @@
   - name: display result
     debug:
      msg: "{{result}}"
+
+
+
+  - name: install git
+    apt:
+      name: git
+      state: present
+    when: result.stderr ==""
+    
+    
+  - name: install tree
+    apt: 
+      name: tree
+      state: present
+    when: result.stderr !=""  
+      
