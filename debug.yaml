@@ -4,7 +4,7 @@
   tasks:
   - name: execute linux command
     command: hostname -f
-    registerr: result
+    register: result
 
   - name: display result
     debug:
