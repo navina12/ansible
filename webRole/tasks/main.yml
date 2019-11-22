@@ -1,2 +1,19 @@
 ---
 # tasks file for webRole
+  
+  - name: install git
+    yum: 
+      name: git
+      state: present
+
+  - name: install wget
+    yum:
+      name: wget
+      state: present
+
+  - name: install tree
+    yum:
+      name: tree
+      state: present   
+
+
