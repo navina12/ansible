@@ -1,0 +1,23 @@
+---
+- hosts: redhatservers
+  become: yes
+  tasks:
+
+- name: install wget
+  yum:
+    name: wget
+    state: present
+  tags: wget
+
+- name: install git
+  yum: 
+    name: git
+    state: present
+  tags: git
+  
+- name: install tree
+  yum:
+    name: tree
+    state: present
+  tags: tree  
+
