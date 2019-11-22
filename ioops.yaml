@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: install tree
+    apt:
+     name: "{{item}}"
+     state: present
+     when : ansible_os_family=="Debian"
+    loop:
+     - tree
+     - wget
+     - git
