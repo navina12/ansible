@@ -4,8 +4,8 @@
   172.31.40.195
   172.31.40.91
 
-  
-
+  [win]
+172.31.92.193
   
   
   
@@ -21,6 +21,12 @@
 
 
 [webservers:vars]
+
+[win:vars]
+ansible_user=Administrator
+ansible_password=T7ZP$VWHNrb
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
 
 
 
