@@ -1,5 +1,5 @@
 [win]
-172.31.87.147
+172.31.92.193
 
 
 
@@ -8,5 +8,7 @@
   ansible_user=Administrator
   ansible_password=b.wDkYF%Q;
   ansible_connection=winrm
+  ansible_winrm_server_cert_validation=ignore
+
   
 
