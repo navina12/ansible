@@ -6,7 +6,7 @@
 
 [win:vars]
   ansible_user=Administrator
-  ansible_password=b.wDkYF%Q;
+  ansible_password= T7ZP$VWHNrb
   ansible_connection=winrm
   ansible_winrm_server_cert_validation=ignore
 
