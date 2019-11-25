@@ -16,4 +16,4 @@
 ansible_user=Administrator
 ansible_password=e?E&6Nd7g6
 ansible_connection=winrm
-ansible_winrm_server_cert_validation=ignore
+ansible_winrm_server_cert_validation=enable
