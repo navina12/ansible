@@ -5,3 +5,4 @@
 - include_tasks: tomcat.yaml
 - include_tasks: permissons.yaml
 - include_tasks: servicefile.yaml
+- include_tasks: starttom.yaml
