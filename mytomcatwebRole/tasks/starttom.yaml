@@ -1,0 +1,10 @@
+---
+- name: reload daemon
+  systemd: 
+   daemon_reload: yes
+   
+- name: start tomcat
+  systemd:
+    name: tomcat
+    state: started   
+  
