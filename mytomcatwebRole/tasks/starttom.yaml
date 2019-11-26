@@ -3,8 +3,8 @@
   systemd: 
    daemon_reload: yes
    
-- name: start tomcat
-  systemd:
+-  name:  start tomcat
+   systemd:
+    state: started
     name: tomcat
-    state: started   
   
