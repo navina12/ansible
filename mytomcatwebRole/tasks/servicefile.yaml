@@ -1,5 +1,5 @@
 ---
-- name: tom config file into node
+- name: tom sevice file into node
   template:
     src: template/conf.j2
     dest: /etc/systemd/system/tomcat.service
