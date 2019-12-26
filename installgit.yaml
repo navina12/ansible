@@ -1,5 +1,5 @@
 ---
-- hosts: appservers
+- hosts: [appservers]
   become: yes
   tasks:
   - name: install git
